@@ -16,13 +16,15 @@ struct ContentView: View {
             
             Image("e4cfe5")
                 .resizable(resizingMode: .stretch)
+                .frame(width: 400.0, height: 900.0)
                 .ignoresSafeArea()
             
             VStack {
                 Text("Hi there!")
                     .font(.title)
-                Text("My name is Spirit Kaufmann, and here are some facts about me.")
                     .padding()
+                Text("My name is Spirit Kaufmann, and here are some facts about me.")
+                    .padding(.top, 1.0)
                 
                 Image("penza")
                     .resizable()
