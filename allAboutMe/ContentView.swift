@@ -22,25 +22,30 @@ struct ContentView: View {
             VStack {
                 Text("Hi there!")
                     .font(.title)
-                    .padding()
+                    .padding(.vertical, 10)
                 Text("My name is Spirit Kaufmann, and here are some facts about me.")
-                    .padding(.top, 1.0)
+                    .padding(.horizontal, 30)
+                    
                 
                 Image("penza")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .cornerRadius(20)
+                    .cornerRadius(100)
+                    .padding(.horizontal)
+                    .padding()
                 
                 Text("I adore my cat, Penza <3")
-                    .padding(10)
+                    .padding(5)
                 
                 Text("\(funFact)")
                 
                 Button("Click to learn more") {
                 action: do { self.switchFact() }
                 }
-                .buttonStyle(.bordered)
-                .tint(.pink)
+                .buttonStyle(.borderedProminent)
+                .tint(Color(hue: 0.56, saturation: 0.438, brightness: 0.851, opacity: 0.55))
+                .foregroundColor(Color(hue: 0.378, saturation: 0.349, brightness: 0.602))
+                .fontWeight(.bold)
                 .padding()
             }
         }
